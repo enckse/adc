@@ -1,7 +1,7 @@
 name = "R3";
 picture = "logo_aar_ca.paa";
 actionName = "GitHub";
-action = "https://github.com/alexcroox/R3";
+action = "https://github.com/enckse/R3";
 description = "After Action Replays";
 logo = "logo_aar_ca.paa";
 logoOver = "logo_aar_ca.paa";
