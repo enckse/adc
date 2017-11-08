@@ -1,7 +1,7 @@
 ADDONS="addons/"
 PBO="aar_main.pbo"
 BIN="bin/"
-EXTENSION_NAME="r3_extension.so"
+EXTENSION_NAME="adc_extension.so"
 EXTENSION="../armq/bin/"$(EXTENSION_NAME)
 all: clean build pack
 
