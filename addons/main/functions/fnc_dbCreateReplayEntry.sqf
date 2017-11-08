@@ -21,12 +21,6 @@ private _functionLogName = "AAR > dbCreateReplayEntry";
 private _query = [["replay", missionName, worldName, daytime, QUOTE(VERSION)], GVAR(extensionSeparator)] call CBA_fnc_join;
 private _insertResult = call compile (GVAR(extensionName) callExtension _query);
 
-if ((_insertResult select 0) isEqualTo "error") exitWith {
-
-    ERROR_SYSTEM_CHAT("The AAR tool (R3) failed to add this mission to your database, this mission will not be captured");
-    DBUG(format[ARR_2("Failed to get replay ID: %1", _insertResult select 1)], _functionLogName);
-};
-
 GVAR(replayId) = _insertResult select 1;
 
 ["replaySetup"] call CBA_fnc_localEvent;
