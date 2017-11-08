@@ -1,0 +1,3 @@
+[submodule "armq"]
+	path = armq
+	url = https://github.com/enckse/armq
