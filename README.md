@@ -1,7 +1,7 @@
-R3
+A(rma) D(ata) C(ollection)
 ===
 
-This is a fork of the Arma R3 [addon](https://github.com/alexcroox/R3)
+This is a fork of the Arma R3 [addon](https://github.com/alexcroox/R3) focused on collecting data for later analysis/visualization
 
 # requirements
 

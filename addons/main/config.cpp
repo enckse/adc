@@ -6,8 +6,8 @@ class CfgPatches {
         weapons[] = {};
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cba_common"};
-        author[] = {"Titan"};
-        authorUrl = "https://github.com/enckse/R3";
+        author[] = {"enckse"};
+        authorUrl = "https://github.com/enckse/adc";
         VERSION_CONFIG;
     };
 };
