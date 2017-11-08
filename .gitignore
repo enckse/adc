@@ -1,12 +1,1 @@
-release/*
-*.cache
 *.pbo
-texHeaders.bin
-*.swp
-*.swo
-*.biprivatekey
-Thumbs.db
-!addons/extDB3.pbo
-extension/build/*
-!extension/build/CMakeLists.txt
-extension/include/spdlog
