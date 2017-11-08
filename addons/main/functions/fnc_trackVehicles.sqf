@@ -24,7 +24,7 @@ private _movementData = "";
 
 // Loop through all vehicles on the map
 {
-    private _doNotTrack = _x getVariable ["r3_do_not_track", false];
+    private _doNotTrack = _x getVariable ["adc_do_not_track", false];
 
     if !(_doNotTrack) then {
 

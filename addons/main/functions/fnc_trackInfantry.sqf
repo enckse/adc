@@ -24,14 +24,14 @@ private _movementData = "";
 
 // Loop through all units on the map
 {
-    private _doNotTrack = _x getVariable ["r3_do_not_track", false];
+    private _doNotTrack = _x getVariable ["adc_do_not_track", false];
 
     if !(_doNotTrack) then {
 
         [_x] call FUNC(addInfantryEventHandlers);
 
         if (_x isKindOf "Logic") then {
-            _x setVariable ["r3_do_not_track", true];
+            _x setVariable ["adc_do_not_track", true];
         };
 
         if (vehicle _x == _x && !(_x isKindOf "Logic")) then {
