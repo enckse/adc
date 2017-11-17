@@ -29,9 +29,11 @@ private _init = format['
     {
         "replayId": "%1",
         "server": "%2",
+        "adc": "%3",
     }',
     GVAR(replayId),
-    serverName
+    serverName,
+    VERSION
 ];
 
 ["aar", _json, 0] call FUNC(dbInsertEvent);
