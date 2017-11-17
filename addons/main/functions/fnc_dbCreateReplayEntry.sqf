@@ -25,4 +25,16 @@ GVAR(replayId) = _insertResult select 1;
 
 ["replaySetup"] call CBA_fnc_localEvent;
 
+private _server = call serverName
+private _init = format['
+    {
+        "replayId": "%1",
+        "server": "%2",
+    }',
+    GVAR(replayId),
+    _server
+];
+
+["aar", _json, 0] call FUNC(dbInsertEvent);
+
 DBUG(format[ARR_2("Replay db entry setup %1", GVAR(replayId))], _functionLogName);
