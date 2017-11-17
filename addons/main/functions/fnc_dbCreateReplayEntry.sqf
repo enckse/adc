@@ -25,16 +25,15 @@ GVAR(replayId) = _insertResult select 1;
 
 ["replaySetup"] call CBA_fnc_localEvent;
 
-private _init = format['
+private _json = format['
     {
-        "replayId": "%1",
-        "server": "%2",
-        "adc": "%3",
+        "server": "%1",
+        "adc": "%2",
     }',
-    GVAR(replayId),
     serverName,
-    STRINGIFY(VERSION)
+    QUOTE(VERSION)
 ];
 
-["aar", _init, "0"] call FUNC(dbInsertEvent);
+private _init = [["event", GVAR(replayId), "0", "aar", _json, time], GVAR(extensionSeparator)] call CBA_fnc_join;
+call compile (GVAR(extensionName) callExtension _init)
 DBUG(format[ARR_2("Replay db entry setup %1", GVAR(replayId))], _functionLogName);
