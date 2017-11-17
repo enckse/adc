@@ -33,9 +33,8 @@ private _init = format['
     }',
     GVAR(replayId),
     serverName,
-    VERSION
+    STRINGIFY(VERSION)
 ];
 
-["aar", _json, 0] call FUNC(dbInsertEvent);
-
+["aar", _init, "0"] call FUNC(dbInsertEvent);
 DBUG(format[ARR_2("Replay db entry setup %1", GVAR(replayId))], _functionLogName);
