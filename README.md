@@ -16,3 +16,13 @@ This is a fork of the Arma R3 [addon](https://github.com/alexcroox/R3) focused o
 * Enable/deploy the [armq-server](https://github.com/enckse/armq-serveR) components (including redis store)
 
 and you are set
+
+## building
+
+* make sure the necessary 32-bit libs are installed per any [army](https//github.com/enckse/armq) requirements
+* for archlinux utilize the PKGBUILD for the `makepbo` command available [here](https://github.com/enckse/depbo-tools)
+
+now you can:
+```
+make
+```
