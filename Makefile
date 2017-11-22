@@ -1,6 +1,6 @@
-ADDONS="addons/"
-PBO="aar_main.pbo"
-BIN="bin/"
+ADDONS=addons/
+PBO=aar_main.pbo
+BIN=bin/
 EXTENSIONS=$(shell find armq/bin/ -type f | grep "extension.so")
 all: clean dependencies build pack
 
