@@ -1,8 +1,7 @@
 ADDONS="addons/"
 PBO="aar_main.pbo"
 BIN="bin/"
-EXTENSION_NAME="adc_extension.so"
-EXTENSION="armq/bin/"$(EXTENSION_NAME)
+EXTENSIONS=$(shell find armq/bin/ -type f | grep "extension.so")
 all: clean dependencies build pack
 
 dependencies:
@@ -19,5 +18,5 @@ build:
 
 pack:
 	mkdir -p $(BIN)
-	cp $(EXTENSION) $(EXTENSION_NAME)
-	tar cvf $(BIN)build.tar.gz $(EXTENSION_NAME) logo_aar_ca.paa mod.cpp $(ADDONS)$(PBO)
+	cp $(EXTENSIONS) .
+	tar cvf $(BIN)build.tar.gz *.so  logo_aar_ca.paa mod.cpp $(ADDONS)$(PBO)
