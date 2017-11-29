@@ -29,7 +29,7 @@ GVAR(replayId) = _insertResult select 1;
 private _json = format['
     {
         "server": "%1",
-        "adc": "%2",
+        "adc": "%2"
     }',
     serverName,
     QUOTE(VERSION)
