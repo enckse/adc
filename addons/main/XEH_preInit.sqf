@@ -4,7 +4,6 @@ ADDON = false;
 
 #include "XEH_PREP.hpp"
 
-diag_log productVersion
 GVAR(logEvents) = true;
 GVAR(noPlayers) = false;
 GVAR(replayId) = 0;
