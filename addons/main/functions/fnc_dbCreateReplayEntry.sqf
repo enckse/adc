@@ -20,7 +20,6 @@ private _functionLogName = "AAR > dbCreateReplayEntry";
 // Send the query to the extension
 private _query = [["replay", missionName, worldName, daytime, QUOTE(VERSION)], GVAR(extensionSeparator)] call CBA_fnc_join;
 private _insertResult = call compile (GVAR(extensionName) callExtension _query);
-["Alarm"] remoteExec ["playSound", 0];
 
 GVAR(replayId) = _insertResult select 1;
 
