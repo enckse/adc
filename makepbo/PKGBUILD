@@ -1,6 +1,6 @@
 # Maintainer: Sean Enck <enckse@gmail.com>
 pkgname=depbo-tools
-pkgver=0.6.80
+pkgver=0.6.88
 pkgrel=1
 arch=("x86_64")
 pkgdesc="mikero depbo tools"
@@ -8,7 +8,7 @@ depends=("lzo" "libvorbis" "gcc-libs")
 url="https://arma;services.maverick-applications.com/Products/MikerosDosTools/FileBrowserFree"
 license=('CUSTOM')
 source=("$pkgname-$pkgver.tgz::https://armaservices.maverick-applications.com/Products/MikerosDosTools/DownloadFree?download=$pkgname-$pkgver-linux-64bit.tgz")
-sha256sums=('3e399f9a4ae4fba21b233df0d5850e439735d6eb243961c347ab7510945402d0')
+sha256sums=('e588edd4235cf492e2c37ee1288cebf1339fd11a943646e32a833646e5a2d8f3')
 
 package() {
   cd "${srcdir}/$pkgname-$pkgver"
