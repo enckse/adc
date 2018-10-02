@@ -5,7 +5,7 @@ This is a fork of the Arma R3 [addon](https://github.com/alexcroox/R3) focused o
 
 # requirements
 
-* Utilizes the [armq](https://github.com/enckse/armq) extension and currently only support linux deployment
+* Utilizes the [armq](https://voidedtech.network/cgit/cgit.cgi/armq/about/) extension and currently only support linux deployment
 * **Requires the latest version of [CBA](https://github.com/CBATeam/CBA_A3/releases)**
 * Server Side addon for capturing unit movement and behaviour to a database for After Action Replays on a website.
 * No modifications to your missions required, nothing for clients to download.
@@ -13,13 +13,13 @@ This is a fork of the Arma R3 [addon](https://github.com/alexcroox/R3) focused o
 # install
 
 * Deploy like any normal mod
-* Enable/deploy the [armq-server](https://github.com/enckse/armq-serveR) components (including redis store)
+* Enable/deploy the [armq-server](https://voidedtech.network/cgit/cgit.cgi/armq-server/about/) components (including redis store)
 
 and you are set
 
 ## building
 
-* make sure the necessary 32-bit libs are installed per any [armq](https://github.com/enckse/armq) requirements
+* make sure the necessary 32-bit libs are installed per any [armq](https://voidedtech.network/cgit/cgit.cgi/armq/about/) requirements
 * for archlinux utilize the PKGBUILD for the `makepbo` command available in the `makepbo/` dir
 
 now you can:
