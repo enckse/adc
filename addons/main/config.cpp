@@ -7,7 +7,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {"cba_common"};
         author[] = {"enckse"};
-        authorUrl = "https://github.com/enckse/adc";
+        authorUrl = "https://gitlab.com/enckse/adc";
         VERSION_CONFIG;
     };
 };
