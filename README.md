@@ -20,7 +20,6 @@ and you are set
 ## building
 
 * make sure the necessary 32-bit libs are installed per any [armq](https://voidedtech.com/cgit/armq/about/) requirements
-* for archlinux utilize the PKGBUILD for the `makepbo` command available in the `makepbo/` dir
 
 now you can:
 ```
