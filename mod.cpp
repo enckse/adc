@@ -1,7 +1,7 @@
 name = "ADC";
 picture = "logo_aar_ca.paa";
 actionName = "GitHub";
-action = "https://gitlab.com/enckse/adc";
+action = "https://voidedtech.com/cgit/adc";
 description = "Arma Data Collection";
 logo = "logo_aar_ca.paa";
 logoOver = "logo_aar_ca.paa";
